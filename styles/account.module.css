@@ -1,0 +1,289 @@
+.root {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+    width: 100%;
+    background-color: #f5f5f5;
+    margin-top: 70px;
+    padding: 20px;
+}
+
+.darkRoot {
+    background-color: #0a1a32;
+}
+
+.loginTitle {
+    color: #1a3e72;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.darkRoot .loginTitle {
+    color: #f8c537;
+}
+
+.form {
+    margin-top: 20px;
+    color: #333;
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.darkRoot .form {
+    background-color: #171D1C;
+    color: white;
+}
+
+.formGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+}
+
+.formGroup input {
+    width: 100%;
+    border: 1px solid #ddd;
+    height: 50px;
+    padding: 0 15px;
+    color: #333;
+    border-radius: 5px;
+    background: none;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.darkRoot .formGroup input {
+    color: white;
+    border-color: #444;
+    background-color: #222;
+}
+
+.formGroup input:focus {
+    border-color: #1a3e72;
+    box-shadow: 0 0 0 2px rgba(26, 62, 114, 0.2);
+}
+
+.darkRoot .formGroup input:focus {
+    border-color: #f8c537;
+    box-shadow: 0 0 0 2px rgba(248, 197, 55, 0.2);
+}
+
+.formGroup label {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #777;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    background-color: white;
+    padding: 0 5px;
+}
+
+.darkRoot .formGroup label {
+    background-color: #171D1C;
+    color: #aaa;
+}
+
+.formGroup input:focus + label,
+.formGroup input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #1a3e72;
+    background-color: white;
+}
+
+.darkRoot .formGroup input:focus + label,
+.darkRoot .formGroup input:not(:placeholder-shown) + label {
+    color: #f8c537;
+    background-color: #171D1C;
+}
+
+.errorMessage {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.button {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #1a3e72;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #15305a;
+    transform: translateY(-2px);
+}
+
+.darkRoot .button {
+    background-color: #f8c537;
+    color: #1a3e72;
+}
+
+.darkRoot .button:hover {
+    background-color: #e6b82e;
+}
+
+.forgotPassword {
+    color: #777;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.forgotPassword:hover {
+    color: #1a3e72;
+    text-decoration: underline;
+}
+
+.darkRoot .forgotPassword {
+    color: #aaa;
+}
+
+.darkRoot .forgotPassword:hover {
+    color: #f8c537;
+}
+
+.alternateOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 20px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #777;
+    font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ddd;
+    margin: 0 10px;
+}
+
+.darkRoot .divider {
+    color: #aaa;
+}
+
+.darkRoot .divider::before,
+.darkRoot .divider::after {
+    background-color: #444;
+}
+
+.googleButton {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.googleButton:hover {
+    background-color: #f5f5f5;
+}
+
+.googleButton img {
+    width: 20px;
+    height: 20px;
+}
+
+.darkRoot .googleButton {
+    background-color: #222;
+    border-color: #444;
+    color: white;
+}
+
+.darkRoot .googleButton:hover {
+    background-color: #333;
+}
+
+.signupLink {
+    color: #777;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.signupLink span {
+    color: #1a3e72;
+    font-weight: bold;
+}
+
+.signupLink:hover {
+    color: #333;
+}
+
+.signupLink:hover span {
+    text-decoration: underline;
+}
+
+.darkRoot .signupLink {
+    color: #aaa;
+}
+
+.darkRoot .signupLink span {
+    color: #f8c537;
+}
+
+.darkRoot .signupLink:hover {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .root {
+        margin-top: 60px;
+        padding: 15px;
+    }
+    
+    .form {
+        padding: 20px;
+    }
+    
+    .loginTitle {
+        font-size: 24px;
+    }
+}

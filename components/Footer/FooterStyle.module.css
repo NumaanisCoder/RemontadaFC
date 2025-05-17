@@ -1,0 +1,124 @@
+.root {
+  display: flex;
+  background-color: #1a3e72;
+  color: white;
+  justify-content: space-around;
+  padding: 40px 20px;
+  border-top: 3px solid #f8c537;
+}
+
+.dark {
+  background-color: #0a1a32;
+}
+
+.company {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.companyDescription {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.companyName {
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+  font-size: 42px;
+  letter-spacing: 1px;
+  color: #f8c537;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dark .companyName {
+  color: #f8c537;
+}
+
+.goTo {
+  display: flex;
+  gap: 40px;
+}
+
+.LinkContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.LinkContainer h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 22px;
+  color: #f8c537;
+  letter-spacing: 1px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  box-sizing: border-box;
+  padding: 6px 0;
+  color: white;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.link:hover {
+  color: #f8c537;
+  transform: translateX(5px);
+}
+
+.link::before {
+  position: absolute;
+  left: -15px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.link:hover::before {
+  opacity: 1;
+  left: -10px;
+}
+
+@media (max-width: 768px) {
+  .root {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    padding: 30px 20px;
+  }
+  
+  .company {
+    width: 90%;
+  }
+  
+  .goTo {
+    width: 90%;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .LinkContainer {
+    align-items: center;
+  }
+  
+  .links {
+    align-items: center;
+  }
+  
+  .link::before {
+    display: none;
+  }
+  
+  .link:hover {
+    transform: none;
+  }
+}

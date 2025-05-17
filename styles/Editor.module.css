@@ -1,0 +1,154 @@
+.root {
+    background-color: black;
+    max-height: calc(100vh - 80px); /* Full height of the viewport */
+    border-right: 2px solid #f2f2f2;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: auto; /* Enables scrolling if the content overflows */
+    z-index: 98;
+}
+
+/* Webkit-based browsers (Chrome, Edge, Safari) */
+.root::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.root::-webkit-scrollbar-thumb {
+    background-color: red; /* Color of the scrollbar thumb */
+    border-radius: 20px;
+
+}
+
+.root::-webkit-scrollbar-thumb:hover {
+    background-color: red; /* Color on hover */
+}
+
+.root::-webkit-scrollbar-track {
+    background-color: white; /* Color of the scrollbar track */
+   
+}
+
+
+
+.form{
+    width: 100%;
+}
+
+
+.root > form{
+    width: 100%;
+}
+.dark > form > .formGroup > textarea, .dark > form > .formGroup > input, .dark > form > .formGroup > select{
+    background-color: black;
+    color: white;
+}
+
+.root > details{
+    margin-top: 70px;
+    width: 50%;
+}
+
+.div2{
+    margin-top: 60px;
+}
+.allblogcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    padding: 40px 10px;
+}
+
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.formGroup.darkFG > input,.formGroup.darkFG > textarea,.formGroup.darkFG > select{
+
+    background-color: black;
+    color: white;
+}
+.formGroup2{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.formGroup2{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.formLabel{
+    color: white;
+}
+
+.submitButton{
+    float: left;
+    border: 1px solid #0E34A0;
+    border-radius: 1px;
+    padding: 8px 20px;
+    background: linear-gradient(180deg, #154ada 0, #0E34A0 100%);
+    position: relative;
+    overflow: hidden;
+    color: white;
+    border-radius: 2px;
+    max-height: max-content;
+    transition: all linear 0.5s;
+    max-width: fit-content;
+    font-size: clamp(0.8rem, 1rem , 1.2rem);
+}
+.submitButton:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.urlimage{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+}
+.submitButton2{
+    padding: 6px 8px;
+    width: fit-content;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.submitButton2:hover{
+    cursor: pointer;
+    opacity: .9;
+}
+
+
+@keyframes marqueeAnimation {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .marqueediv{
+    background-color: black;
+    color: white;
+  }
+
+  .marquee {
+    overflow: hidden;
+    font-size: large;
+    animation: marqueeAnimation 20s linear infinite;
+  }
+  
+
+  @media (max-width: 500px) {
+
+    .root > details{
+        width: 90%;
+    }
+    .root > form{
+        margin-top: 80px;
+        width: 90%;
+    }
+  }

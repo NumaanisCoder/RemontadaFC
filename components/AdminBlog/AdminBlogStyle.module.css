@@ -1,0 +1,45 @@
+.root{
+    padding: 20px;
+    color: white;
+    border: none;
+    background-color: #03012C;
+}
+
+.actionButtonContainer{
+    margin: 4px 0px 0px 15px;
+    display: flex;
+    gap: 4px;
+}
+
+.deleteButton{
+    border: 2px solid red;
+    background-color: red;
+    color: white;
+    padding: 6px;
+   
+    border-radius: 6px;
+}
+
+.viewButton{
+    border: 2px solid blue;
+background-color: blue;
+    color: white;
+    padding: 6px;
+    
+    border-radius: 6px;
+}
+.editButton{
+    border: 2px solid green;
+    background-color: green;
+    color: white;
+    padding: 6px;
+   
+    border-radius: 6px;
+}
+
+.editButton:hover, .viewButton:hover, .deleteButton:hover{
+    filter: brightness(0.8);
+    cursor: pointer;
+    transition: all 100ms linear;
+}
+

@@ -1,0 +1,107 @@
+.root{
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-background);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-cardbackground);
+    color: white;
+    padding: 30px 45px;
+    gap: 8px;
+    width: 50%;
+    max-width: 50rem;
+    justify-content: center;
+    align-self: center;
+    border-radius: 30px;
+}
+
+.form > input{
+    width: 100%;
+    border: none;
+    height: 2.8rem;
+    padding: 0 0 0 15px;
+    color: white;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    background: none;
+    outline: none;
+    box-sizing: border-box;
+   
+}
+.formGroup input:focus{
+    border: 2px solid white;
+}
+.form > input::placeholder{
+    color: white;
+}
+
+.form > button{
+    float: left;
+    border: 1px solid #D80032;
+    border-radius: 1px;
+    padding: 8px 20px;
+    background: linear-gradient(180deg, #EF233C 0, #D80032 100%);
+    position: relative;
+    overflow: hidden;
+    color: white;
+    border-radius: 10px;
+    max-height: max-content;
+    transition: all linear 0.5s;
+}
+.form > button::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, .8),
+        rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    animation: shine 3s infinite linear;
+}
+@keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    20% {
+      left: 100%;
+    }
+  
+    100% {
+      left: 100%;
+    }
+  }
+
+.lableEmail{
+    position: relative;
+    width: 200px;
+}
+.lableEmail::before{
+    content: "Email";
+    position: absolute;
+    top: -65px;
+    left: 10px;
+    color: white;
+    z-index: 1;
+    padding: 0 10px;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+    background-color: var(--main-cardbackground);
+}
+
+
+@media (max-width: 600px) {
+
+    .form{
+        width: 85%;
+    }
+    
+}
