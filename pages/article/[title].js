@@ -130,14 +130,14 @@ const Blog = (props) => {
               "name": "GameGrasper",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.gamegrasper.online/GameGrasperLogo.png"
+                "url": "https://www.remontadafc.online/GameGrasperLogo.png"
               }
             },
             "datePublished": createdAt,
             "description": summary,
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": `https://www.gamegrasper.online${getURL(title)}`
+              "@id": `https://www.remontadafc.online${getURL(title)}`
             }
           })
         }} />
@@ -171,7 +171,7 @@ const Blog = (props) => {
 
         <div className={style.socialMediaContainer}>
           <FaShare width={30} />
-          <SocialShare url={`https://www.gamegrasper.online${urlpart}`} title={title} />
+          <SocialShare url={`https://www.remontadafc.online${urlpart}`} title={title} />
         </div>
 
 
